@@ -1,0 +1,4 @@
+"Inglês",200,1
+"Atendente De Farmacia",150,2
+"Adiministração",180,3
+"Cuidador de idoso",300,4
