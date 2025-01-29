@@ -12,10 +12,11 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
 public class BancoDeDados {
     private ArrayList<String> linhas;
-    private ArrayList<Curso> cursos;
+    private List<Curso> cursos;
 
     public BancoDeDados() {
         this.linhas = new ArrayList<>();
@@ -36,6 +37,7 @@ public class BancoDeDados {
                 linha = br.readLine(); //le proxima linha
             }
             System.out.println("Arquivo Lido com sucesso!\n");
+            br.close();
         } catch (Exception e) {
             System.out.println("Arquivo Não encontrado.");
         }
@@ -51,7 +53,7 @@ public class BancoDeDados {
             cursos.add(curso);
         }
     }
-    public ArrayList<Curso> getCursos(){
+    public List<Curso> getCursos(){
         return cursos;
     }
 }

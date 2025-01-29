@@ -1,7 +1,5 @@
 package sistema.model;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +16,7 @@ public class Venda {
         System.out.println("Curso de " + ultimoCurso.getNome() + " adicionado com sucesso!");
     }
 
-    public void adicionarCurso(int id, ArrayList<Curso> cursos) {
+    public void adicionarCurso(int id, List<Curso> cursos) {
         cursosVenda.add(cursos.get(id - 1));
         Curso ultimoCurso = cursosVenda.get(cursosVenda.size() - 1);
         System.out.println("Curso de " + ultimoCurso.getNome() + " adicionado com sucesso!");
